@@ -887,12 +887,12 @@ steps, adding possibility to prepare some common setup for multiple scenarios in
 About background best practices, please read
 `here <https://github.com/cucumber/cucumber/wiki/Background#good-practices-for-using-background>`_.
 
-.. NOTE:: There is only step "Given" should be used in "Background" section,
-          steps "When" and "Then" are prohibited, because their purpose are
-          related to actions and consuming outcomes, that is conflict with
-          "Background" aim - prepare system for tests or "put the system
-          in a known state" as "Given" does it.
-          The statement above is applied for strict Gherkin mode, which is
+.. NOTE:: Only "Given" steps should be used in the "Background" section.
+          "When" and "Then" are prohibited because their purpose is
+          perform actions and consume outcomes. This is conflict with aim of
+          the "Background" section, which is to prepare system for tests or 
+          "put the system in a known state" (as "Given" does).
+          The statement above is enforced by strict Gherkin mode, which is
           enabled by default.
 
 
